@@ -10,9 +10,9 @@ client = OpenAI(api_key = openai_key)
 
 chat_completions = client.chat.completions.create(
             messages= {
-                      "role": "system",
-                     "content": f"Tu réponds aux questions des utilisateurs",
-                     },
+                        "role": "system",
+                        "content": f"Tu réponds aux questions des utilisateurs",
+                        },
                         { 
                         "role": "assistant",
                         "content": "Remplis le prompt"
@@ -26,6 +26,6 @@ chat_completions = client.chat.completions.create(
             top_p=1.0,
             frequency_penalty=0.0,
             presence_penalty=0.0,
-            )
+)
 
 st.write(chat_completions.choices[0].messages.content)

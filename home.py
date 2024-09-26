@@ -7,6 +7,6 @@ st.title("Mon formulaire")
 st.write("Voici un petit formulaire de contact à remplir :")
 
 # Champ de saisie
-st.input_text("Entrez votre texte :")
+st.text_input("Entrez votre texte :")
 
 #

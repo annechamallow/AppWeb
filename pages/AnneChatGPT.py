@@ -9,7 +9,9 @@ client = OpenAI(api_key = openaikey)
 prompt = st.text_input("Tapez votre prompt : ")
 
 chat_completion = client.chat.completions.create(
-      message=prompt,
+      messages= {
+            "role": "user",
+            "content": prompt},
       model="gpt-3.5-turbo",
       temperature=0.3,
       max_tokens=100,
@@ -18,4 +20,4 @@ chat_completion = client.chat.completions.create(
       presence_penalty=0.0,
 )
 
-st.write(chat_completion.choices[0].message.content)
+st.write(chat_completion.choices[0].messages.content)

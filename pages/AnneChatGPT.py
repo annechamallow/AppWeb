@@ -8,7 +8,7 @@ prompt = st.text_input("Tapez votre prompt : ")
 openai_key = st.sidebar.text_input("Collez ici votre clé OpenAI :", '')
 client = OpenAI(api_key = openai_key)
 
-chat_completion = client.chat.completions.create(
+chat_completions = client.chat.completions.create(
             messages= {
                   "role": "user",
                   "content": prompt},
@@ -20,4 +20,4 @@ chat_completion = client.chat.completions.create(
             presence_penalty=0.0,
 )
 
-st.write(chat_completion.choices[0].messages.content)
+st.write(chat_completions.choices[0].messages.content)

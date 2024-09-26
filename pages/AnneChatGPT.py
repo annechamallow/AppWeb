@@ -10,8 +10,16 @@ client = OpenAI(api_key = openai_key)
 
 chat_completions = client.chat.completions.create(
             messages= {
-                  "role": "user",
-                  "content": prompt},
+                      "role": "system",
+                     "content": f"Tu réponds aux questions des utilisateurs",
+                     },
+                        { 
+                        "role": "assistant",
+                        "content": "Remplis le prompt"
+            }
+                        {
+                        "role": "user",
+                        "content": prompt},
             model="gpt-3.5-turbo",
             temperature=0.3,
             max_tokens=100,

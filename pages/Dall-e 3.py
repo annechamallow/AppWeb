@@ -20,4 +20,4 @@ image = client.images.generate(
 
 image_url = image.data[0].url
 
-st.image("image_url")
+st.image(image_url)

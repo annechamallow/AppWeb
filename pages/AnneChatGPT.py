@@ -16,7 +16,7 @@ chat_completions = client.chat.completions.create(
                         { 
                         "role": "assistant",
                         "content": "Remplis le prompt"
-            }
+                        },
                         {
                         "role": "user",
                         "content": prompt},

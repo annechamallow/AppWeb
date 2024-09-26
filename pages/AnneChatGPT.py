@@ -3,10 +3,10 @@ from openai import OpenAI
 
 st.title("Anne-ChatGPT")
 
-openai_key = st.sidebar.text_input("Collez ici votre clé OpenAI :", '')
-client = OpenAI(api_key = openaikey)
-
 prompt = st.text_input("Tapez votre prompt : ")
+
+openai_key = st.sidebar.text_input("Collez ici votre clé OpenAI :", '')
+client = OpenAI(api_key = openai_key)
 
 chat_completion = client.chat.completions.create(
             messages= {

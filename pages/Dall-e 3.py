@@ -6,9 +6,10 @@ st.title("Générateur d'images Dall-e 3")
 
 prompt_image = st.text_input("Entrez votre prompt ici :")
 
-OpenAIKey = st.sidebar.text_input("Collez ici votre clé OpenAI :", '')
+OpenAIKEY = st.sidebar.text_input("Collez ici votre clé OpenAI :", '')
 
-client = OpenAI(OpenAIKey)
+
+client = OpenAI(api_key=OpenAIKEY)
 
 image = client.images.generate(
     model="dall-e-3",

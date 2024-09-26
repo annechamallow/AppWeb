@@ -14,4 +14,4 @@ st.write(user_input)
 st.image("https://tempo.cdn.tambourine.com/windsong/media/bmot-website-homepage-header-desktop-65f9c01c2da38.mp4")
 
 # Sidebar
-st.sidebar.radio("Menu", [1;2;3;4])
+st.sidebar.radio("Menu", [1,2,3,4])

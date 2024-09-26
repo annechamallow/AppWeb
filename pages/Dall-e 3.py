@@ -1,5 +1,5 @@
 import streamlit as st
-import OpenAI 
+from openai import OpenAI
 
 st.title("Générateur d'images Dall-e 3")
 
@@ -8,7 +8,7 @@ OpenAIKey = st.sidebar.text_input("Collez ici votre clé OpenAI :")
 
 prompt_image= st.text_input("Entrez votre prompt ici :")
 
-client = OpenAIKey
+client = OpenAI(OpenAIKey)
 
 image = client.images.generate(
     model="dall-e-3",

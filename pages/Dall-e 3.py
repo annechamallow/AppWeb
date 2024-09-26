@@ -3,13 +3,12 @@ from openai import OpenAI
 
 st.title("Générateur d'images Dall-e 3")
 
-
 prompt_image = st.text_input("Entrez votre prompt ici :")
 
-OpenAIKEY = st.sidebar.text_input("Collez ici votre clé OpenAI :", '')
+openai_key = st.sidebar.text_input("Collez ici votre clé OpenAI :", '')
 
 try: 
-    client = OpenAI(api_key=OpenAIKEY)
+    client = OpenAI(api_key=openai_key)
     
     image = client.images.generate(
         model="dall-e-3",

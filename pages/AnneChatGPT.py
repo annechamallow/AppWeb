@@ -9,11 +9,11 @@ client = OpenAI(api_key = openaikey)
 prompt = st.text_input("Tapez votre prompt : ")
 
 chat_completion = client.chat.completions.create(
-      messages= {
-            "role": "user",
-            "content": prompt},
-      model="gpt-3.5-turbo",
-      temperature=0.3,
+            messages= {
+                  "role": "user",
+                  "content": prompt},
+            model="gpt-3.5-turbo",
+            temperature=0.3,
       max_tokens=100,
       top_p=1.0,
       frequency_penalty=0.0,

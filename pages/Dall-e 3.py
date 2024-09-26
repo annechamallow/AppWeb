@@ -20,6 +20,6 @@ try:
     
     image_url = image.data[0].url
     
-    st.image(image_url)
+    #st.image(image_url)
 except:
     pass

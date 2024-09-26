@@ -4,5 +4,9 @@ import streamlit as st
 st.title("Mon formulaire")
 
 # Text
-st.write("Voici un petit formulaire de contact à remplir")
+st.write("Voici un petit formulaire de contact à remplir :")
 
+# Champ de saisie
+st.input_text("Entrez votre texte :")
+
+#

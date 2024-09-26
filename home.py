@@ -10,4 +10,3 @@ st.write("Voici un petit formulaire de contact à remplir :")
 user-input = st.text_input("Entrez votre texte :")
 
 st.write(user-input)
-#

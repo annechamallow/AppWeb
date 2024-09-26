@@ -10,7 +10,7 @@ st.text_input("Entrez votre prompt ici :")
 from openai import OpenAI
 client = OpenAIKey
 
-image = client.images.generate(
+image = client.image.generate(
     model="dall-e-3",
     prompt = st.text_input,
     size="512x512",

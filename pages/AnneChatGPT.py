@@ -29,4 +29,4 @@ chat_completions = client.chat.completions.create(
             presence_penalty=0.0,
             )
 
-st.write(chat_completions.choices[0].messages.content)
+st.write(chat_completion.choices[0].message.content)

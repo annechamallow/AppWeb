@@ -5,8 +5,6 @@ st.title("Générateur d'images Dall-e 3")
 
 OpenAIKey = st.sidebar.text_input("Collez ici votre clé OpenAI :")
 
-
-
 client = OpenAI(OpenAIKey)
 
 image = client.images.generate(

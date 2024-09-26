@@ -27,6 +27,6 @@ chat_completions = client.chat.completions.create(
             top_p=1.0,
             frequency_penalty=0.0,
             presence_penalty=0.0,
-)
+            )
 
 st.write(chat_completions.choices[0].messages.content)

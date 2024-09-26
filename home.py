@@ -18,7 +18,7 @@ st.sidebar.title("Anne-Charlotte Raimbault")
 st.sidebar.video("https://www.youtube.com/watch?v=AsVdSicpGpY")
 
 # Select bar
-student_grade = st.selectbox("Sélectionnez votre niveau d'études :", ["Bac","Bac +2", "Bac +3", "Bac +4", "Bac +5"]
+student_grade = st.selectbox("Sélectionnez votre niveau d'études :", ["Bac","Bac +2", "Bac +3", "Bac +4", "Bac +5"])
 
 # Select slider
 age = st.selectslider("Indiquez votre âge", range(0,99))

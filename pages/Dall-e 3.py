@@ -8,7 +8,7 @@ st.text_input("Entrez votre prompt ici :")
 prompt = st.text_input
 
 from openai import OpenAI
-client = OpenAI(api_key=OpenAIKey)
+client = OpenAIKey
 
 image = client.images.generate(
     model="dall-e-2",

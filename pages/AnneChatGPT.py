@@ -1,9 +1,9 @@
 import streamlit as st 
 from openai import OpenAI
 
+openai_key = st.sidebar.text_input("Collez ici votre clé OpenAI :", '')
 st.title("Anne-ChatGPT")
 
-openai_key = st.sidebar.text_input("Collez ici votre clé OpenAI :", '')
 client = OpenAI(api_key=openaikey)
 
 prompt = st.text_input("Tapez votre prompt : ")

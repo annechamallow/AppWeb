@@ -22,3 +22,8 @@ student_grade = st.selectbox("Sélectionnez votre niveau d'études :", ["Bac","B
 
 # Select slider
 age = st.select_slider("Indiquez votre âge", range(0,99))
+
+if age > 18:
+  st.write("Vous êtes majeur")
+else
+  st.write("Vous êtes mineur") 
